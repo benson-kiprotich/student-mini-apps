@@ -7,15 +7,28 @@ body {
   }
 
   header {
-    background-color: #007bff;
-    color: #fff;
+    color: #000000;
     padding: 1em;
     text-align: center;
   }
 
-  main {
+  .container {
     padding: 2em;
+    display: flex;
   }
+
+  .left-column,
+    .right-column {
+    padding: 20px;
+    }
+
+    .left-column {
+    flex: 1;
+    }
+
+    .right-column {
+    flex: 2;
+    }
 
   img {
     max-width: 100%;
@@ -47,8 +60,7 @@ body {
   }
 
   footer {
-    background-color: #007bff;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 1em;
     position: fixed;
