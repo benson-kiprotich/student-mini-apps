@@ -46,11 +46,25 @@ body {
 
   ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 20px;
   }
 
   li {
+    padding-left: 20px;
     margin-bottom: 1em;
+    position: relative;
+  }
+  li::before {
+    content: "\2022"; /* Unicode character for bullet point */
+    color: #333; /* Bullet point color */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+  }
+
+  span {
+    font-weight: bold;
+    color: #000000;
   }
 
   a {
